@@ -2,6 +2,7 @@
   [(ngModel)]="username"
 />
 <button 
+  [disabled]="username === ''"
   (click)="clearUserName()"
 >Clear</button>
 <p>{{username}}</p>
